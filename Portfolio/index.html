@@ -1,34 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <nav>
-      <a href="#about">About Me</a> |
-      <a href="#projects">My Projects</a> |
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello, I am a Frontend Developer. I work with HTML, CSS, and JavaScript.</p>
-  </section>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <p>Projects will be added soon.</p>
-  </section>
+      <i class="ri-menu-line" id="menu-icon"></i>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourmail@example.com</p>
-  </section>
-</body>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="home" class="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Joy Thayal</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>
+          I'm a Frontend Developer with expertise in HTML, CSS, and JavaScript,
+          dedicated to building modern, responsive, and user-friendly websites.
+          I specialize in solving design challenges, enhancing UI/UX, and
+          ensuring seamless performance across all devices.
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-twitter-x-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+        </div>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="images/profile.jpg" alt="Profile Picture" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="about-img">
+        <img src="images/profile.jpg" alt="Profile Picture" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend Developer</h3>
+        <p>
+          I'm a Frontend Developer with expertise in HTML, CSS, and JavaScript,
+          dedicated to building modern, responsive, and user-friendly websites.
+          I specialize in solving design challenges, enhancing UI/UX, and
+          ensuring seamless performance across all devices.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <h2 class="heading">My <span>Services</span></h2>
+
+      <div class="services-container">
+
+        <!-- Service 1 -->
+        <div class="services-box">
+          <i class="ri-code-s-slash-fill"></i>
+          <h3>Web Development</h3>
+          <p>
+            I specialize in creating clean, functional, and visually appealing
+            web solutions that not only look great but also deliver real value.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="services-box">
+          <i class="ri-device-fill"></i>
+          <h3>Responsive Design</h3>
+          <p>
+            I ensure websites look perfect and work smoothly on all devices –
+            desktop, tablet, and mobile.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="services-box">
+          <i class="ri-layout-3-fill"></i>
+          <h3>Landing Page Design</h3>
+          <p>
+            I create professional, high-converting landing pages that engage
+            visitors and boost business growth.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="services-box">
+          <i class="ri-refresh-fill"></i>
+          <h3>Website Redesign</h3>
+          <p>
+            I modernize old websites with clean code and fresh designs to match
+            current trends and standards.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="services-box">
+          <i class="ri-tools-fill"></i>
+          <h3>Bug Fixing & Maintenance</h3>
+          <p>
+            I fix design and functionality issues, ensuring smooth performance
+            and reliable website maintenance.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="services-box">
+          <i class="ri-speed-up-fill"></i>
+          <h3>Performance Optimization</h3>
+          <p>
+            I optimize websites for faster loading speed, better SEO, and
+            improved user experience.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/project1.png" alt="Project 1" />
+          <div class="portfolio-layer">
+            <h4>Project Title</h4>
+            <p>Project Description</p>
+            <a href="#"><i class="ri-external-link-line"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/project2.png" alt="Project 2" />
+          <div class="portfolio-layer">
+            <h4>Project Title</h4>
+            <p>Project Description</p>
+            <a href="#"><i class="ri-external-link-line"></i></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/project3.png" alt="Project 3" />
+          <div class="portfolio-layer">
+            <h4>Project Title</h4>
+            <p>Project Description</p>
+            <a href="#"><i class="ri-external-link-line"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/project4.png" alt="Project 4" />
+          <div class="portfolio-layer">
+            <h4>Project Title</h4>
+            <p>Project Description</p>
+            <a href="#"><i class="ri-external-link-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+      
+      <div class="skills-row">
+        <div class="skills-column">
+          <h3 class="title">Coding Skills</h3>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>HTML <span>90%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>CSS <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>JavaScript <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>PHP <span>60%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-column">
+          <h3 class="title">Professional Skills</h3>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>Communication <span>90%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Web Development<span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Problem Solving <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Web Design <span>60%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Joy | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="ri-arrow-up-fill"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="script.js"></script>
+  </body>
 </html>
